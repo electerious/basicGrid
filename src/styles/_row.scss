@@ -25,7 +25,7 @@
 		position: relative;
 		box-sizing: border-box;
 		padding: 0 $gutter/2;
-		width: percentage(1/$columns);
+		width: 100%;
 
 		&:last-child {
 			float: right;
