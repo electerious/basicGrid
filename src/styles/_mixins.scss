@@ -1,0 +1,13 @@
+@mixin gridSize($name) {
+
+	@for $i from 1 through $columns {
+		&.#{ $name }-#{ $i } { width: percentage(1/$columns)*$i; }
+		&.#{ $name }-offset-#{ $i } { margin-left: percentage(1/$columns)*$i; }
+		&.#{ $name }-pull-#{ $i } { left: auto; right: percentage(1/$columns)*$i; }
+		&.#{ $name }-push-#{ $i } { right: auto; left: percentage(1/$columns)*$i; }
+	}
+
+	&.hide-on-#{ $name } { display: none; }
+	&.show-on-#{ $name } { display: block; }
+
+}

@@ -1,0 +1,41 @@
+{
+  "name": "basicgrid",
+  "moduleName": "basicGrid",
+  "version": "1.0.0",
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "A Foundation-like grid as a standalone module",
+  "main": "dist/basicGrid.min.js",
+  "keywords": [
+    "grid",
+    "foundation",
+    "column",
+    "columns",
+    "row",
+    "rows",
+    "responsive"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/electerious/basicGrid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/basicGrid.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "etc"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0"
+  }
+}
