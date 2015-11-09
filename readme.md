@@ -6,7 +6,7 @@ A Foundation-like grid as a standalone module.
 
 - [Setup](#setup)
 - [How to use](#how-to-use)
-	- [Alert](#settings)
+	- [Settings](#settings)
 	- [Basics](#basics)
 	- [Sizes and Breakpoints](#sizes-and-breakpoints)
 	- [Offset](#offset)
@@ -41,7 +41,7 @@ $maxWidth : 1280px; // Maximum width of a row
 $columns  : 12; // Number of columns
 $gutter   : 1.8rem; // Size of the gaps between columns
 
-// Column-Breakpoints (see "How to use: Breakpoints")
+// Column-Breakpoints
 $sizes: (
 	'small'  : 0px,
 	'medium' : 640px,
@@ -83,6 +83,7 @@ Specify the widths of each column with the `small-`, `medium-`, and `large-` cla
 
 Use offset-classes to move columns to the right.
 
+```html
 <div class="row">
 	<div class="column small-1"></div>
 	<div class="column small-1 small-offset-1"></div>
@@ -93,6 +94,7 @@ Use offset-classes to move columns to the right.
 	<div class="column small-1"></div>
 	<div class="column small-1"></div>
 </div>
+```
 
 ### Show and hide
 
