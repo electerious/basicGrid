@@ -5,6 +5,13 @@ A Foundation-like grid as a standalone module.
 ## Contents
 
 - [Setup](#setup)
+- [How to use](#how-to-use)
+	- [Alert](#settings)
+	- [Basics](#basics)
+	- [Sizes and Breakpoints](#sizes-and-breakpoints)
+	- [Offset](#offset)
+	- [Show and hide](#show-and-hide)
+	- [Push and pull](#push-and-pull)
 
 ## Setup
 
@@ -46,17 +53,14 @@ $sizes: (
 
 ### Basics
 
-basicGrid allows you to fill a row with up to twelve columns. Columns without a specified size will fill an entire row.
-
-```html
-<div class="row">
-	<div class="column"></div>
-</div>
-```
+- You can fill a row with up to twelve columns. Columns without a specified size will fill an entire row.
+- The last column of a row will float to the right, to work around different rounding behaviors.
+- basicGrid is mobile-first. Smaller breakpoints will automatically apply on all larger sizes.
+- Classes are generated from the names and sizes in the `$sizes` map.
 
 ### Sizes and Breakpoints
 
-Specify the widths of each column with the `small-`, `medium-`, and `large-` classes. Those classes are generated from the names and sizes in the `$sizes` map.
+Specify the widths of each column with the `small-`, `medium-`, and `large-` classes.
 
 ```html
 <div class="row">
@@ -75,7 +79,20 @@ Specify the widths of each column with the `small-`, `medium-`, and `large-` cla
 </div>
 ```
 
-basicGrid is mobile-first. Smaller breakpoints will automatically apply on all larger sizes.
+### Offset
+
+Use offset-classes to move columns to the right.
+
+<div class="row">
+	<div class="column small-1"></div>
+	<div class="column small-1 small-offset-1"></div>
+	<div class="column small-1"></div>
+	<div class="column small-1 small-offset-3"></div>
+	<div class="column small-1"></div>
+	<div class="column small-1"></div>
+	<div class="column small-1"></div>
+	<div class="column small-1"></div>
+</div>
 
 ### Show and hide
 
@@ -104,7 +121,7 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 
 ```html
 <div class="row">
-	<div class="column small-10 small-push-2"><span>10</span></div>
-	<div class="column small-2 small-pull-10"><span>2</span></div>
+	<div class="column small-10 small-push-2"></div>
+	<div class="column small-2 small-pull-10"></div>
 </div>
 ```
