@@ -4,6 +4,7 @@ A Foundation-like grid as a standalone module.
 
 ## Contents
 
+- [Demos](#demos)
 - [Setup](#setup)
 - [How to use](#how-to-use)
 	- [Settings](#settings)
@@ -12,6 +13,12 @@ A Foundation-like grid as a standalone module.
 	- [Offset](#offset)
 	- [Show and hide](#show-and-hide)
 	- [Push and pull](#push-and-pull)
+
+## Demos
+
+| Name | Description | Link |
+|:-----------|:------------|:------------|
+| Default | Includes all features and most column variations. | [Demo](http://codepen.io/electerious/pen/pjOvPZ) |
 
 ## Setup
 
