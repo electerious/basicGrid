@@ -13,6 +13,9 @@ A Foundation-like grid as a standalone module.
 	- [Offset](#offset)
 	- [Show and hide](#show-and-hide)
 	- [Push and pull](#push-and-pull)
+	- [Flexbox](#flexbox)
+	- [Direction](#direction)
+	- [Alignment](#alignment)
 
 ## Demos
 
@@ -132,5 +135,38 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 <div class="row">
 	<div class="column small-10 small-push-2"></div>
 	<div class="column small-2 small-pull-10"></div>
+</div>
+```
+
+### Flexbox
+
+`flex-on-` adds the `display: flex` property to a row and enables the use of additional classes. Columns will have the same height when active. Use `block-on-` to disable Flexbox.
+
+```html
+<div class="row block-on-small flex-on-medium">
+	<div class="column medium-6"></div>
+	<div class="column medium-6"></div>
+</div>
+```
+
+### Direction
+
+Define the direction columns are placed in a row using `ltr-on-` and `rtl-on-`. Defaults to `ltr-on-` and only works when `flex-on-` applies to the row.
+
+```html
+<div class="row flex-on-small ltr-on-small rtl-on-medium">
+	<div class="column small-6"></div>
+	<div class="column small-6"></div>
+</div>
+```
+
+### Alignment
+
+`top-on-`, `center-on-` and `bottom-on-` change the alignment of all columns in a row. Defaults to `stretch-on-` and only works when `flex-on-` applies to the row.
+
+```html
+<div class="row flex-on-small top-on-small center-on-medium bottom-on-large">
+	<div class="column small-6"></div>
+	<div class="column small-6"></div>
 </div>
 ```

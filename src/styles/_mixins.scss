@@ -1,4 +1,19 @@
-@mixin gridSize($name) {
+@mixin rowClasses($name) {
+
+	&.flex-on-#{ $name } { display: flex; }
+	&.block-on-#{ $name } { display: block; }
+
+	&.stretch-on-#{ $name } { align-items: stretch; }
+	&.top-on-#{ $name } { align-items: flex-start; }
+	&.center-on-#{ $name } { align-items: center; }
+	&.bottom-on-#{ $name } { align-items: flex-end; }
+
+	&.ltr-on-#{ $name } { flex-direction: row }
+	&.rtl-on-#{ $name } { flex-direction: row-reverse; }
+
+}
+
+@mixin columnClasses($name) {
 
 	@for $i from 1 through $columns {
 		&.#{ $name }-#{ $i } { width: percentage(1/$columns)*$i; }
