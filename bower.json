@@ -20,13 +20,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/electerious/basicGrid.git"
-  },
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
-    "etc"
-  ]
+  }
 }
