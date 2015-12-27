@@ -1,7 +1,7 @@
 {
   "name": "basicgrid",
   "moduleName": "basicGrid",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "authors": [
     "Tobias Reich <tobias@electerious.com>"
   ],
@@ -22,14 +22,6 @@
     "type": "git",
     "url": "https://github.com/electerious/basicGrid.git"
   },
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
-    "etc"
-  ],
   "devDependencies": {
     "@electerious/basictasks": "1.1.1",
     "gulp": "^3.9.0"
