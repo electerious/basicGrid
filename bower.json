@@ -5,7 +5,7 @@
     "Tobias Reich <tobias@electerious.com>"
   ],
   "description": "A Foundation-like grid as a standalone module",
-  "main": "dist/basicGrid.min.js",
+  "main": "dist/basicGrid.min.css",
   "keywords": [
     "grid",
     "foundation",
