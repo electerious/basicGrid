@@ -35,6 +35,10 @@
 			float: right;
 		}
 
+		&:first-child:last-child {
+			float: left;
+		}
+
 		@each $sizeName, $size in $sizes {
 			@media (min-width: $size) { @include columnClasses($sizeName) }
 		}
