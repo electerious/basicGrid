@@ -23,7 +23,7 @@
     "url": "https://github.com/electerious/basicGrid.git"
   },
   "devDependencies": {
-    "@electerious/basictasks": "1.1.1",
+    "@electerious/basictasks": "1.1.3",
     "gulp": "^3.9.0"
   }
 }
