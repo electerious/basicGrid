@@ -16,6 +16,10 @@
     "rows",
     "responsive"
   ],
+  "scripts": {
+    "start": "gulp watch",
+    "compile": "gulp"
+  },
   "license": "MIT",
   "homepage": "http://github.com/electerious/basicGrid",
   "repository": {
