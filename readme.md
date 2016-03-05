@@ -7,7 +7,6 @@ A Foundation-like grid as a standalone module.
 - [Demos](#demos)
 - [Setup](#setup)
 - [How to use](#how-to-use)
-	- [Settings](#settings)
 	- [Basics](#basics)
 	- [Sizes and Breakpoints](#sizes-and-breakpoints)
 	- [Offset](#offset)
@@ -16,6 +15,7 @@ A Foundation-like grid as a standalone module.
 	- [Flexbox](#flexbox)
 	- [Direction](#direction)
 	- [Alignment](#alignment)
+- [Options](#options)
 
 ## Demos
 
@@ -41,25 +41,6 @@ Include the CSS-files in the `head`:
 ```
 
 ## How to use
-
-### Settings
-
-Import `src/styles/main.scss` directly to customize the grid:
-
-```scss
-$maxWidth : 1280px; // Maximum width of a row
-$columns  : 12; // Number of columns
-$gutter   : 1.8rem; // Size of the gaps between columns
-
-// Column-Breakpoints
-$sizes: (
-	'small'  : 0px,
-	'medium' : 640px,
-	'large'  : 1024px
-);
-
-@import "src/styles/main";
-```
 
 ### Basics
 
@@ -169,4 +150,23 @@ Define the direction columns are placed in a row using `ltr-on-` and `rtl-on-`. 
 	<div class="column small-6"></div>
 	<div class="column small-6"></div>
 </div>
+```
+
+## Options
+
+Import `src/styles/main.scss` directly to customize the grid:
+
+```scss
+$maxWidth : 1280px; // Maximum width of a row
+$columns  : 12; // Number of columns
+$gutter   : 1.8rem; // Size of the gaps between columns
+
+// Column-Breakpoints
+$sizes: (
+	'small'  : 0px,
+	'medium' : 640px,
+	'large'  : 1024px
+);
+
+@import "src/styles/main";
 ```
