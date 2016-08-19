@@ -21,7 +21,7 @@
     "package.json"
   ],
   "license": "MIT",
-  "homepage": "http://github.com/electerious/basicGrid",
+  "homepage": "https://github.com/electerious/basicGrid",
   "repository": {
     "type": "git",
     "url": "https://github.com/electerious/basicGrid.git"

@@ -21,11 +21,11 @@ A Foundation-like grid as a standalone module.
 
 | Name | Description | Link |
 |:-----------|:------------|:------------|
-| Default | Includes all features and most column variations. | [Demo](http://codepen.io/electerious/pen/pjOvPZ) |
+| Default | Includes all features and most column variations. | [Demo](https://codepen.io/electerious/pen/pjOvPZ) |
 
 ## Setup
 
-We recommend to install basicGrid using [Bower](http://bower.io/) or [npm](https://npmjs.com).
+We recommend to install basicGrid using [Bower](https://bower.io/) or [npm](https://npmjs.com).
 
 ```sh
 bower install basicGrid
