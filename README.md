@@ -13,6 +13,7 @@ A Foundation-like grid as a standalone module.
 	- [Show and hide](#show-and-hide)
 	- [Push and pull](#push-and-pull)
 	- [Flexbox](#flexbox)
+	- [Wrap](#wrap)
 	- [Direction](#direction)
 	- [Alignment](#alignment)
 - [Options](#options)
@@ -122,6 +123,17 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 ### Flexbox
 
 `flex-on-` adds the `display: flex` property to a row and enables the use of additional classes. Columns will have the same height when active. Use `block-on-` to disable Flexbox.
+
+```html
+<div class="row block-on-small flex-on-medium">
+	<div class="column medium-6"></div>
+	<div class="column medium-6"></div>
+</div>
+```
+
+### Wrap
+
+`wrap-on-` adds the `flex-wrap: wrap` property to a row. Columns will wrap when they don't fit into one row. Use `nowrap-on-` to disable wrapping.
 
 ```html
 <div class="row block-on-small flex-on-medium">

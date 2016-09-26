@@ -8,6 +8,9 @@
 		display: none;
 	}
 
+	&.wrap-on-#{ $name } { flex-wrap: wrap; }
+	&.nowrap-on-#{ $name } { flex-wrap: nowrap; }
+
 	&.stretch-on-#{ $name } { align-items: stretch; }
 	&.top-on-#{ $name } { align-items: flex-start; }
 	&.center-on-#{ $name } { align-items: center; }
