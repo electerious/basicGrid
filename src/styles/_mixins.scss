@@ -3,6 +3,11 @@
 	&.flex-on-#{ $name } { display: flex; }
 	&.block-on-#{ $name } { display: block; }
 
+	&.flex-on-#{ $name }::before,
+	&.flex-on-#{ $name }::after {
+		display: none;
+	}
+
 	&.stretch-on-#{ $name } { align-items: stretch; }
 	&.top-on-#{ $name } { align-items: flex-start; }
 	&.center-on-#{ $name } { align-items: center; }
