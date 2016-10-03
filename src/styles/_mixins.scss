@@ -8,6 +8,8 @@
 	&.left-on-#{ $name } { justify-content: flex-start; }
 	&.center-on-#{ $name } { justify-content: center; }
 	&.right-on-#{ $name } { justify-content: flex-end; }
+	&.around-on-#{ $name } { justify-content:space-around; }
+	&.between-on-#{ $name } { justify-content: space-between; }
 
 	&.ltr-on-#{ $name } { flex-direction: row; }
 	&.rtl-on-#{ $name } { flex-direction: row-reverse; }

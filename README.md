@@ -55,7 +55,7 @@ Include the CSS-files in the `head`:
 
 ### Sizes and Breakpoints
 
-Specify the widths of each column with the `small-`, `medium-`, and `large-` classes. Defaults to `small-12`.
+Specify the widths of each column with `small-`, `medium-`, and `large-`. Defaults to `small-12`.
 
 ```html
 <div class="row">
@@ -76,11 +76,18 @@ Specify the widths of each column with the `small-`, `medium-`, and `large-` cla
 
 ### Horizontal Alignment
 
-`left-on-`, `center-on-` and `right-on-` change the horizontal alignment of all columns in a row. Defaults to `left-on-`.
+`left-on-`, `center-on-` and `right-on-` change the horizontal alignment of all columns in a row. `around-on-` and `between-on-` allow you to distribute the columns. Defaults to `left-on-`.
 
 ```html
 <div class="row left-on-small center-on-medium right-on-large">
 	<div class="column small-6"></div>
+</div>
+```
+
+```html
+<div class="row around-on-small between-on-large">
+	<div class="column small-4"></div>
+	<div class="column small-4"></div>
 </div>
 ```
 
