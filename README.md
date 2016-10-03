@@ -55,7 +55,7 @@ Include the CSS-files in the `head`:
 
 ### Sizes and Breakpoints
 
-Specify the widths of each column with `small-`, `medium-`, and `large-`. Defaults to `small-12`.
+Specify the widths of each column with `small-`, `medium-`, and `large-` or use `-auto` to fill the available space. Defaults to `small-12`.
 
 ```html
 <div class="row">
@@ -71,6 +71,14 @@ Specify the widths of each column with `small-`, `medium-`, and `large-`. Defaul
 	<div class="column small-1 medium-4 large-6"></div>
 	<div class="column small-1 medium-6 large-6"></div>
 	<div class="column small-1 medium-6 large-6"></div>
+</div>
+```
+
+```html
+<div class="row">
+	<div class="column small-6 medium-auto"></div>
+	<div class="column small-auto medium-auto"></div>
+	<div class="column small-auto medium-auto"></div>
 </div>
 ```
 
