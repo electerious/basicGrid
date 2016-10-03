@@ -1,33 +1,49 @@
 @mixin rowClasses($name) {
 
-	&.flex-on-#{ $name } { display: flex; }
-	&.block-on-#{ $name } { display: block; }
-
-	&.flex-on-#{ $name }::before,
-	&.flex-on-#{ $name }::after {
-		display: none;
-	}
-
-	&.wrap-on-#{ $name } { flex-wrap: wrap; }
-	&.nowrap-on-#{ $name } { flex-wrap: nowrap; }
-
 	&.stretch-on-#{ $name } { align-items: stretch; }
 	&.top-on-#{ $name } { align-items: flex-start; }
-	&.center-on-#{ $name } { align-items: center; }
+	&.middle-on-#{ $name } { align-items: center; }
 	&.bottom-on-#{ $name } { align-items: flex-end; }
 
-	&.ltr-on-#{ $name } { flex-direction: row }
+	&.left-on-#{ $name } { justify-content: flex-start; }
+	&.center-on-#{ $name } { justify-content: center; }
+	&.right-on-#{ $name } { justify-content: flex-end; }
+
+	&.ltr-on-#{ $name } { flex-direction: row; }
 	&.rtl-on-#{ $name } { flex-direction: row-reverse; }
 
 }
 
 @mixin columnClasses($name) {
 
+	&.#{ $name }-auto {
+		flex: 1 1 0px;
+	}
+
 	@for $i from 1 through $columns {
-		&.#{ $name }-#{ $i } { width: percentage(1/$columns)*$i; }
-		&.#{ $name }-offset-#{ $i } { margin-left: percentage(1/$columns)*$i; }
-		&.#{ $name }-pull-#{ $i } { left: auto; right: percentage(1/$columns)*$i; }
-		&.#{ $name }-push-#{ $i } { right: auto; left: percentage(1/$columns)*$i; }
+
+		&.#{ $name }-#{ $i } {
+			flex: 0 1 auto;
+			width: percentage(1/$columns)*$i;
+		}
+
+		&.#{ $name }-offset-#{ $i } {
+			flex: 0 1 auto;
+			margin-left: percentage(1/$columns)*$i;
+		}
+
+		&.#{ $name }-pull-#{ $i } {
+			flex: 0 1 auto;
+			left: auto;
+			right: percentage(1/$columns)*$i;
+		}
+
+		&.#{ $name }-push-#{ $i } {
+			flex: 0 1 auto;
+			right: auto;
+			left: percentage(1/$columns)*$i;
+		}
+
 	}
 
 	&.hide-on-#{ $name } { display: none; }

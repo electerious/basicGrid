@@ -23,42 +23,17 @@
 		}
 
 		span {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			display: inline-block;
 			width: 100%;
-			height: 80px;
-			background: rgba(67, 147, 230, 1);
-			color: white;
-		}
-
-		.row.flex-on-small .column,
-		.row.flex-on-medium .column,
-		.row.flex-on-large .column {
-			position: relative;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			padding: 1rem 0;
+			text-align: center;
 			color: white;
-		}
-
-		.row.flex-on-small .column::before,
-		.row.flex-on-medium .column::before,
-		.row.flex-on-large .column::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: .9rem;
-			bottom: 0;
-			left: .9rem;
-			background: rgba(67, 230, 147, 1);
-			z-index: -1;
+			background: rgba(67, 147, 230, 1);
 		}
 
 	</style>
 
-	<!-- row and column -->
+	<!-- column -->
 	<div class="row">
 		<div class="column"><span>12</span></div>
 	</div>
@@ -67,6 +42,20 @@
 	<div class="row">
 		<div class="column small-1"><span>1</span></div>
 		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+	</div>
+
+	<!-- small- -->
+	<div class="row">
 		<div class="column small-1"><span>1</span></div>
 		<div class="column small-1"><span>1</span></div>
 		<div class="column small-1"><span>1</span></div>
@@ -160,78 +149,126 @@
 		<div class="column small-2 small-pull-10"><span>2</span></div>
 	</div>
 
-	<!-- flex-on- -->
-	<div class="row flex-on-medium">
-		<div class="column medium-1">1<br>1<br>1<br>1<br>1</div>
-		<div class="column medium-2">2</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-3">3</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-	</div>
-
 	<!-- top-on- -->
-	<div class="row flex-on-medium top-on-medium">
-		<div class="column medium-1">1<br>1<br>1<br>1<br>1</div>
-		<div class="column medium-2">2</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-3">3</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
+	<div class="row top-on-small">
+		<div class="column small-1"><span>1<br>1<br>1<br>1<br>1</span></div>
+		<div class="column small-2"><span>2</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-3"><span>3</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
 	</div>
 
-	<!-- center-on- -->
-	<div class="row flex-on-medium center-on-medium">
-		<div class="column medium-1">1<br>1<br>1<br>1<br>1</div>
-		<div class="column medium-2">2</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-3">3</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
+	<!-- middle-on- -->
+	<div class="row middle-on-small">
+		<div class="column small-1"><span>1<br>1<br>1<br>1<br>1</span></div>
+		<div class="column small-2"><span>2</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-3"><span>3</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
 	</div>
 
 	<!-- bottom-on- -->
-	<div class="row flex-on-medium bottom-on-medium">
-		<div class="column medium-1">1<br>1<br>1<br>1<br>1</div>
-		<div class="column medium-2">2</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-3">3</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
-		<div class="column medium-1">1</div>
+	<div class="row bottom-on-small">
+		<div class="column small-1"><span>1<br>1<br>1<br>1<br>1</span></div>
+		<div class="column small-2"><span>2</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-3"><span>3</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-1"><span>1</span></div>
 	</div>
 
 	<!-- rtl-on- -->
-	<div class="row flex-on-medium rtl-on-medium">
-		<div class="column medium-6">6<br>6<br>6<br>6<br>6</div>
-		<div class="column medium-6">6</div>
+	<div class="row rtl-on-medium">
+		<div class="column small-6"><span>6<br>6<br>6<br>6<br>6</span></div>
+		<div class="column small-6"><span>6</span></div>
 	</div>
 
-	<!-- wrap-on- -->
-	<div class="row flex-on-small wrap-on-small">
-		<div class="column medium-6 large-3">3</div>
-		<div class="column medium-6 large-3">3</div>
-		<div class="column medium-6 large-3">3</div>
-		<div class="column medium-6 large-3">3</div>
+	<!-- left-on- -->
+	<div class="row left-on-small">
+		<div class="column small-6"><span>6</span></div>
 	</div>
 
-	<!-- unwrap-on- -->
-	<div class="row flex-on-small wrap-on-small nowrap-on-medium">
-		<div class="column small-6 medium-6">6</div>
-		<div class="column small-6 medium-6">6</div>
-		<div class="column small-6 medium-6">6</div>
-		<div class="column small-6 medium-6">6</div>
+	<!-- center-on- -->
+	<div class="row center-on-small">
+		<div class="column small-6"><span>6</span></div>
+	</div>
+
+	<!-- center-on- and nested row -->
+	<div class="row center-on-small">
+		<div class="column small-6">
+			<div class="row">
+				<div class="column small-auto"><span>auto</span></div>
+				<div class="column small-4"><span>4</span></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- right-on- -->
+	<div class="row right-on-small">
+		<div class="column small-6"><span>6</span></div>
+	</div>
+
+	<!-- small-auto -->
+	<div class="row">
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+	</div>
+
+	<!-- small- and small-auto -->
+	<div class="row">
+		<div class="column small-4"><span>4</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+	</div>
+
+	<!-- small- and medium-auto -->
+	<div class="row">
+		<div class="column small-12 medium-auto"><span>12, auto</span></div>
+		<div class="column small-12 medium-auto"><span>12, auto</span></div>
+	</div>
+
+	<!-- small-auto and large-6 -->
+	<div class="row">
+		<div class="column small-auto large-4"><span>auto, 4</span></div>
+		<div class="column small-auto large-8"><span>auto, 8</span></div>
+	</div>
+
+	<!-- small-auto and small-1 -->
+	<div class="row">
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column small-1"><span>1</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+	</div>
+
+	<!-- column, small- and small-auto -->
+	<div class="row">
+		<div class="column"><span>12</span></div>
+		<div class="column small-4"><span>4</span></div>
+		<div class="column small-auto"><span>auto</span></div>
+	</div>
+
+	<!-- small-auto and hide-on- -->
+	<div class="row">
+		<div class="column small-auto"><span>auto</span></div>
+		<div class="column hide-on-medium small-8"><span>8</span></div>
 	</div>
 
 </html>

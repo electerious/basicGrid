@@ -1,18 +1,10 @@
 .row {
 
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0 auto;
 	width: 100%;
 	max-width: $maxWidth;
-
-	&::before,
-	&::after {
-		content: ' ';
-		display: table;
-	}
-
-	&::after {
-		clear: both;
-	}
 
 	@each $sizeName, $size in $sizes {
 		@media (min-width: $size) { @include rowClasses($sizeName) }
@@ -25,19 +17,10 @@
 	}
 
 	.column {
-		float: left;
 		position: relative;
 		box-sizing: border-box;
 		padding: 0 $gutter/2;
 		width: 100%;
-
-		&:last-child {
-			float: right;
-		}
-
-		&:first-child:last-child {
-			float: left;
-		}
 
 		@each $sizeName, $size in $sizes {
 			@media (min-width: $size) { @include columnClasses($sizeName) }

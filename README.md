@@ -1,6 +1,6 @@
 # basicGrid
 
-A Foundation-like grid as a standalone module.
+A Foundation-like grid system based on the `flex` display property.
 
 ## Contents
 
@@ -9,13 +9,12 @@ A Foundation-like grid as a standalone module.
 - [How to use](#how-to-use)
 	- [Basics](#basics)
 	- [Sizes and Breakpoints](#sizes-and-breakpoints)
-	- [Offset](#offset)
-	- [Show and hide](#show-and-hide)
-	- [Push and pull](#push-and-pull)
-	- [Flexbox](#flexbox)
-	- [Wrap](#wrap)
+	- [Horizontal Alignment](#horizontal-alignment)
+	- [Vertical Alignment](#vertical-alignment)
 	- [Direction](#direction)
-	- [Alignment](#alignment)
+	- [Offset](#offset)
+	- [Push and pull](#push-and-pull)
+	- [Show and hide](#show-and-hide)
 - [Options](#options)
 
 ## Demos
@@ -45,14 +44,18 @@ Include the CSS-files in the `head`:
 
 ### Basics
 
-- You can fill a row with up to twelve columns. Columns without a specified size will fill an entire row.
-- The last column of a row will float to the right, to work around different rounding behaviors.
 - basicGrid is mobile-first. Smaller breakpoints will automatically apply on all larger sizes.
+- The outermost row has a `max-width`.
+- A nested row removes the left gutter of the first column and the right gutter of the last column inside the row.
 - Classes are generated from the names and sizes in the `$sizes` map.
+- You can fill a row with up to twelve columns. Columns without a specified size will fill an entire row.
+- Each column has a gutter on the left and right side.
+- Columns have the same height when not specified otherwise.
+- Columns wrap when they don't fit into one row.
 
 ### Sizes and Breakpoints
 
-Specify the widths of each column with the `small-`, `medium-`, and `large-` classes.
+Specify the widths of each column with the `small-`, `medium-`, and `large-` classes. Defaults to `small-12`.
 
 ```html
 <div class="row">
@@ -71,6 +74,37 @@ Specify the widths of each column with the `small-`, `medium-`, and `large-` cla
 </div>
 ```
 
+### Horizontal Alignment
+
+`left-on-`, `center-on-` and `right-on-` change the horizontal alignment of all columns in a row. Defaults to `left-on-`.
+
+```html
+<div class="row left-on-small center-on-medium right-on-large">
+	<div class="column small-6"></div>
+</div>
+```
+
+### Vertical Alignment
+
+`top-on-`, `middle-on-` and `bottom-on-` change the vertical alignment of all columns in a row. Defaults to `stretch-on-`, which gives each column the same height.
+
+```html
+<div class="row top-on-small middle-on-medium bottom-on-large">
+	<div class="column small-6"></div>
+</div>
+```
+
+### Direction
+
+Define the direction columns are placed in a row using `ltr-on-` and `rtl-on-`. Defaults to `ltr-on-`.
+
+```html
+<div class="row ltr-on-small rtl-on-medium">
+	<div class="column small-6"></div>
+	<div class="column small-6"></div>
+</div>
+```
+
 ### Offset
 
 Use offset-classes to move columns to the right.
@@ -85,6 +119,17 @@ Use offset-classes to move columns to the right.
 	<div class="column small-1"></div>
 	<div class="column small-1"></div>
 	<div class="column small-1"></div>
+</div>
+```
+
+### Push and pull
+
+Shift columns around between breakpoints using `-push-` and `-pull-`. Especially helpful if you want to modify the order of columns based on the size of the screen.
+
+```html
+<div class="row">
+	<div class="column small-10 small-push-2"></div>
+	<div class="column small-2 small-pull-10"></div>
 </div>
 ```
 
@@ -109,61 +154,6 @@ Use offset-classes to move columns to the right.
 </div>
 ```
 
-### Push and pull
-
-Shift columns around between breakpoints using `-push-` and `-pull-`. Especially helpful if you want to modify the order of columns based on the size of the screen.
-
-```html
-<div class="row">
-	<div class="column small-10 small-push-2"></div>
-	<div class="column small-2 small-pull-10"></div>
-</div>
-```
-
-### Flexbox
-
-`flex-on-` adds the `display: flex` property to a row and enables the use of additional classes. Columns will have the same height when active. Use `block-on-` to disable Flexbox.
-
-```html
-<div class="row block-on-small flex-on-medium">
-	<div class="column medium-6"></div>
-	<div class="column medium-6"></div>
-</div>
-```
-
-### Wrap
-
-`wrap-on-` adds the `flex-wrap: wrap` property to a row. Columns will wrap when they don't fit into one row. Use `nowrap-on-` to disable wrapping.
-
-```html
-<div class="row block-on-small flex-on-medium">
-	<div class="column medium-6"></div>
-	<div class="column medium-6"></div>
-</div>
-```
-
-### Direction
-
-Define the direction columns are placed in a row using `ltr-on-` and `rtl-on-`. Defaults to `ltr-on-` and only works when `flex-on-` applies to the row.
-
-```html
-<div class="row flex-on-small ltr-on-small rtl-on-medium">
-	<div class="column small-6"></div>
-	<div class="column small-6"></div>
-</div>
-```
-
-### Alignment
-
-`top-on-`, `center-on-` and `bottom-on-` change the alignment of all columns in a row. Defaults to `stretch-on-` and only works when `flex-on-` applies to the row.
-
-```html
-<div class="row flex-on-small top-on-small center-on-medium bottom-on-large">
-	<div class="column small-6"></div>
-	<div class="column small-6"></div>
-</div>
-```
-
 ## Options
 
 Import `src/styles/main.scss` directly to customize the grid:
@@ -171,7 +161,7 @@ Import `src/styles/main.scss` directly to customize the grid:
 ```scss
 $maxWidth : 1280px; // Maximum width of a row
 $columns  : 12; // Number of columns
-$gutter   : 1.8rem; // Size of the gaps between columns
+$gutter   : 1.8rem; // Gutter size between columns
 
 // Column-Breakpoints
 $sizes: (
