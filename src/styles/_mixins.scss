@@ -48,6 +48,10 @@
 
 	}
 
+	&.first-on-#{ $name } { order: -1; }
+	&.last-on-#{ $name } { order: 1; }
+	&.origin-on-#{ $name } { order: 0; }
+
 	&.hide-on-#{ $name } { display: none; }
 	&.show-on-#{ $name } { display: block; }
 

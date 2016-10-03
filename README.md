@@ -12,6 +12,7 @@ A Foundation-like grid system based on the `flex` display property.
 	- [Horizontal Alignment](#horizontal-alignment)
 	- [Vertical Alignment](#vertical-alignment)
 	- [Direction](#direction)
+	- [Order](#order)
 	- [Offset](#offset)
 	- [Push and pull](#push-and-pull)
 	- [Show and hide](#show-and-hide)
@@ -117,6 +118,18 @@ Define the direction columns are placed in a row using `ltr-on-` and `rtl-on-`. 
 <div class="row ltr-on-small rtl-on-medium">
 	<div class="column small-6"></div>
 	<div class="column small-6"></div>
+</div>
+```
+
+### Order
+
+Reorder columns with `first-on-`, `last-on-` and `origin-on-`. Defaults to `origin-on-`, which keeps the order as specified in the HTML.
+
+```html
+<div class="row">
+	<div class="column small-4 last-on-small"></div>
+	<div class="column small-4"></div>
+	<div class="column small-4 first-on-small origin-on-medium"></div>
 </div>
 ```
 
