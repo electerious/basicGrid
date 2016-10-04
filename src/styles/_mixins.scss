@@ -30,18 +30,15 @@
 		}
 
 		&.#{ $name }-offset-#{ $i } {
-			flex: 0 1 auto;
 			margin-left: percentage(1/$columns)*$i;
 		}
 
 		&.#{ $name }-pull-#{ $i } {
-			flex: 0 1 auto;
 			left: auto;
 			right: percentage(1/$columns)*$i;
 		}
 
 		&.#{ $name }-push-#{ $i } {
-			flex: 0 1 auto;
 			right: auto;
 			left: percentage(1/$columns)*$i;
 		}
