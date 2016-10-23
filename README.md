@@ -35,7 +35,7 @@ bower install basicGrid
 npm install basicgrid
 ```
 
-Include the CSS-files in the `head`:
+Include the CSS files in the `head` tag:
 
 ```html
 <link rel="stylesheet" href="dist/basicGrid.min.css">
@@ -45,7 +45,7 @@ Include the CSS-files in the `head`:
 
 ### Basics
 
-- basicGrid is mobile-first. Smaller breakpoints will automatically apply on all larger sizes.
+- basicGrid is mobile first. Smaller breakpoints will automatically apply on all larger sizes.
 - The outermost row has a `max-width`.
 - A nested row removes the left gutter of the first column and the right gutter of the last column inside the row.
 - Classes are generated from the names and sizes in the `$sizes` map.
@@ -135,7 +135,7 @@ Reorder columns with `first-on-`, `last-on-` and `origin-on-`. Defaults to `orig
 
 ### Offset
 
-Use offset-classes to move columns to the right.
+Use offset classes to move columns to the right.
 
 ```html
 <div class="row">
