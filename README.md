@@ -60,26 +60,9 @@ Specify the widths of each column with `small-`, `medium-`, and `large-` or use 
 
 ```html
 <div class="row">
-	<div class="column small-1 medium-6 large-6"></div>
-	<div class="column small-1 medium-6 large-6"></div>
-	<div class="column small-1 medium-4 large-6"></div>
-	<div class="column small-1 medium-4 large-6"></div>
-	<div class="column small-1 medium-4 large-6"></div>
-	<div class="column small-1 medium-6 large-6"></div>
-	<div class="column small-1 medium-6 large-6"></div>
-	<div class="column small-1 medium-4 large-6"></div>
-	<div class="column small-1 medium-4 large-6"></div>
-	<div class="column small-1 medium-4 large-6"></div>
-	<div class="column small-1 medium-6 large-6"></div>
-	<div class="column small-1 medium-6 large-6"></div>
-</div>
-```
-
-```html
-<div class="row">
-	<div class="column small-6 medium-auto"></div>
-	<div class="column small-auto medium-auto"></div>
-	<div class="column small-auto medium-auto"></div>
+	<div class="column small-6 medium-6 large-4"></div>
+	<div class="column small-3 medium-auto large-4"></div>
+	<div class="column small-3 medium-auto large-4"></div>
 </div>
 ```
 
@@ -106,6 +89,7 @@ Specify the widths of each column with `small-`, `medium-`, and `large-` or use 
 
 ```html
 <div class="row top-on-small middle-on-medium bottom-on-large">
+	<div class="column small-6"></div>
 	<div class="column small-6"></div>
 </div>
 ```
