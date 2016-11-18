@@ -123,14 +123,9 @@ Use offset classes to move columns to the right.
 
 ```html
 <div class="row">
-	<div class="column small-1"></div>
-	<div class="column small-1 small-offset-1"></div>
-	<div class="column small-1"></div>
-	<div class="column small-1 small-offset-3"></div>
-	<div class="column small-1"></div>
-	<div class="column small-1"></div>
-	<div class="column small-1"></div>
-	<div class="column small-1"></div>
+    <div class="column small-2 small-offset-2"></div>
+    <div class="column small-2 small-offset-4"></div>
+    <div class="column small-2"></div>
 </div>
 ```
 
@@ -151,18 +146,8 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 
 ```html
 <div class="row">
-	<div class="column small-6 hide-on-small show-on-large"></div>
-	<div class="column small-2 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-1 hide-on-large"></div>
-	<div class="column small-2 hide-on-large"></div>
-	<div class="column small-6 hide-on-small show-on-large"></div>
+    <div class="column hide-on-medium show-on-large"></div>
+    <div class="column show-on-medium hide-on-large"></div>
 </div>
 ```
 
