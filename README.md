@@ -8,7 +8,7 @@ A Foundation-like grid system based on the `flex` display property.
 
 - [Demos](#demos)
 - [Setup](#setup)
-- [How to use](#how-to-use)
+- [Usage](#usage)
 	- [Basics](#basics)
 	- [Sizes and Breakpoints](#sizes-and-breakpoints)
 	- [Horizontal Alignment](#horizontal-alignment)
@@ -45,7 +45,7 @@ Include the CSS files in the `head` tag:
 <link rel="stylesheet" href="dist/basicGrid.min.css">
 ```
 
-## How to use
+## Usage
 
 ### Basics
 
