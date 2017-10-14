@@ -166,7 +166,7 @@ $basicGrid__outer   : 0; // Gutter of the outermost row
 $basicGrid__gutter  : 1.8rem; // Gutter size between columns
 
 // Column-Breakpoints
-$sizes: (
+$basicGrid__sizes: (
 	'small'  : 0,
 	'medium' : 640px,
 	'large'  : 1024px
