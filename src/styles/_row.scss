@@ -7,7 +7,9 @@
 	max-width: $maxWidth;
 
 	@each $sizeName, $size in $sizes {
-		@media (min-width: $size) { @include rowClasses($sizeName) }
+		@media (min-width: $size) {
+			@include rowClasses($sizeName);
+		}
 	}
 
 	.row {
@@ -23,7 +25,9 @@
 		width: 100%;
 
 		@each $sizeName, $size in $sizes {
-			@media (min-width: $size) { @include columnClasses($sizeName) }
+			@media (min-width: $size) {
+				@include columnClasses($sizeName);
+			}
 		}
 	}
 

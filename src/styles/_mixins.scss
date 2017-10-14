@@ -8,7 +8,7 @@
 	&.left-on-#{ $name } { justify-content: flex-start; }
 	&.center-on-#{ $name } { justify-content: center; }
 	&.right-on-#{ $name } { justify-content: flex-end; }
-	&.around-on-#{ $name } { justify-content:space-around; }
+	&.around-on-#{ $name } { justify-content: space-around; }
 	&.between-on-#{ $name } { justify-content: space-between; }
 
 	&.ltr-on-#{ $name } { flex-direction: row; }
@@ -26,21 +26,21 @@
 
 		&.#{ $name }-#{ $i } {
 			flex: 0 1 auto;
-			width: percentage(1/$columns)*$i;
+			width: percentage(1 / $columns) * $i;
 		}
 
 		&.#{ $name }-offset-#{ $i } {
-			margin-left: percentage(1/$columns)*$i;
+			margin-left: percentage(1 / $columns) * $i;
 		}
 
 		&.#{ $name }-pull-#{ $i } {
 			left: auto;
-			right: percentage(1/$columns)*$i;
+			right: percentage(1 / $columns) * $i;
 		}
 
 		&.#{ $name }-push-#{ $i } {
 			right: auto;
-			left: percentage(1/$columns)*$i;
+			left: percentage(1 / $columns) * $i;
 		}
 
 	}
