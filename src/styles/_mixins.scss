@@ -19,28 +19,28 @@
 @mixin columnClasses($name) {
 
 	&.#{ $name }-auto {
-		flex: 1 1 0px;
+		flex: 1 1 0;
 	}
 
-	@for $i from 1 through $columns {
+	@for $i from 1 through $basicGrid__columns {
 
 		&.#{ $name }-#{ $i } {
 			flex: 0 1 auto;
-			width: percentage(1 / $columns) * $i;
+			width: percentage(1 / $basicGrid__columns) * $i;
 		}
 
 		&.#{ $name }-offset-#{ $i } {
-			margin-left: percentage(1 / $columns) * $i;
+			margin-left: percentage(1 / $basicGrid__columns) * $i;
 		}
 
 		&.#{ $name }-pull-#{ $i } {
 			left: auto;
-			right: percentage(1 / $columns) * $i;
+			right: percentage(1 / $basicGrid__columns) * $i;
 		}
 
 		&.#{ $name }-push-#{ $i } {
 			right: auto;
-			left: percentage(1 / $columns) * $i;
+			left: percentage(1 / $basicGrid__columns) * $i;
 		}
 
 	}

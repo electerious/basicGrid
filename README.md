@@ -160,16 +160,29 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 Import `src/styles/main.scss` directly to customize the grid:
 
 ```scss
-$maxWidth : 1280px; // Maximum width of a row
-$columns  : 12; // Number of columns
-$gutter   : 1.8rem; // Gutter size between columns
+$basicGrid__columns : 12; // Number of columns
+$basicGrid__width   : 1280px; // Maximum width of a row
+$basicGrid__outer   : 0; // Gutter of the outermost row
+$basicGrid__gutter  : 1.8rem; // Gutter size between columns
 
 // Column-Breakpoints
 $sizes: (
-	'small'  : 0px,
+	'small'  : 0,
 	'medium' : 640px,
 	'large'  : 1024px
 );
 
-@import "src/styles/main";
+@import 'src/styles/main';
+```
+
+Overwrite the SASS options with CSS variables to adjust the grid on the client:
+
+```
+html {
+
+	--basicGrid-width: 1200px;
+	--basicGrid-outer: 0;
+	--basicGrid-gutter: 1.8rem;
+
+}
 ```

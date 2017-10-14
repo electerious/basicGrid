@@ -2,18 +2,24 @@
 
 	display: flex;
 	flex-wrap: wrap;
+	box-sizing: border-box;
 	margin: 0 auto;
+	padding: 0 $basicGrid__outer;
+	padding: 0 var(--basicGrid-outer, $basicGrid__outer);
 	width: 100%;
-	max-width: $maxWidth;
+	max-width: $basicGrid__width;
+	max-width: var(--basicGrid-width, $basicGrid__width);
 
-	@each $sizeName, $size in $sizes {
+	@each $sizeName, $size in $basicGrid__sizes {
 		@media (min-width: $size) {
 			@include rowClasses($sizeName);
 		}
 	}
 
 	.row {
-		margin: 0 $gutter/-2;
+		margin: 0 $basicGrid__gutter/-2;
+		margin: 0 calc(var(--basicGrid-gutter, #{ $basicGrid__gutter }) / -2);
+		padding: 0;
 		width: auto;
 		max-width: none;
 	}
@@ -21,10 +27,11 @@
 	.column {
 		position: relative;
 		box-sizing: border-box;
-		padding: 0 $gutter/2;
+		padding: 0 $basicGrid__gutter/2;
+		padding: 0 calc(var(--basicGrid-gutter, #{ $basicGrid__gutter }) / 2);
 		width: 100%;
 
-		@each $sizeName, $size in $sizes {
+		@each $sizeName, $size in $basicGrid__sizes {
 			@media (min-width: $size) {
 				@include columnClasses($sizeName);
 			}
