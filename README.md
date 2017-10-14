@@ -177,7 +177,7 @@ $sizes: (
 
 Overwrite the SASS options with CSS variables to adjust the grid on the client:
 
-```
+```css
 html {
 
 	--basicGrid-width: 1200px;
