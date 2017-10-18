@@ -39,13 +39,13 @@ bower install basicGrid
 npm install basicgrid
 ```
 
-Include the CSS files in the `head` tag:
+Include the CSS files in the `head` tag …
 
 ```html
 <link rel="stylesheet" href="dist/basicGrid.min.css">
 ```
 
-or include basicGrid via [jsDelivr CDN](https://www.jsdelivr.com/package/npm/basicgrid):
+… or use basicGrid via [jsDelivr CDN](https://www.jsdelivr.com/package/npm/basicgrid):
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basicgrid@3/dist/basicGrid.min.css">
