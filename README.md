@@ -133,9 +133,9 @@ Use offset classes to move columns to the right.
 
 ```html
 <div class="row">
-    <div class="column small-2 small-offset-2"></div>
-    <div class="column small-2 small-offset-4"></div>
-    <div class="column small-2"></div>
+	<div class="column small-2 small-offset-2"></div>
+	<div class="column small-2 small-offset-4"></div>
+	<div class="column small-2"></div>
 </div>
 ```
 
@@ -156,8 +156,8 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 
 ```html
 <div class="row">
-    <div class="column hide-on-medium show-on-large"></div>
-    <div class="column show-on-medium hide-on-large"></div>
+	<div class="column hide-on-medium show-on-large"></div>
+	<div class="column show-on-medium hide-on-large"></div>
 </div>
 ```
 
@@ -166,16 +166,16 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 Import `src/styles/main.scss` directly to customize the grid:
 
 ```scss
-$basicGrid__columns : 12; // Number of columns
-$basicGrid__width   : 1280px; // Maximum width of a row
-$basicGrid__outer   : 0; // Gutter of the outermost row
-$basicGrid__gutter  : 1.8rem; // Gutter size between columns
+$basicGrid__columns: 12; // Number of columns
+$basicGrid__width: 1280px; // Maximum width of a row
+$basicGrid__outer: 0; // Gutter of the outermost row
+$basicGrid__gutter: 1.8rem; // Gutter size between columns
 
 // Column-Breakpoints
 $basicGrid__sizes: (
-	'small'  : 0,
-	'medium' : 640px,
-	'large'  : 1024px
+	'small': 0,
+	'medium': 640px,
+	'large': 1024px
 );
 
 @import 'src/styles/main';
