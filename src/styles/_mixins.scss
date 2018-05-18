@@ -14,6 +14,9 @@
 	&.ltr-on-#{ $name } { flex-direction: row; }
 	&.rtl-on-#{ $name } { flex-direction: row-reverse; }
 
+	&.hide-on-#{ $name } { display: none; }
+	&.show-on-#{ $name } { display: flex; }
+
 }
 
 @mixin columnClasses($name) {

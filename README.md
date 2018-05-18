@@ -152,7 +152,13 @@ Shift columns around between breakpoints using `-push-` and `-pull-`. Especially
 
 ### Show and hide
 
-`show-on-` and `hide-on-` allow you to show and hide individual columns.
+`show-on-` and `hide-on-` allow you to show and hide rows or individual columns.
+
+```html
+<div class="row hide-on-small show-on-large">
+	<div class="column"></div>
+</div>
+```
 
 ```html
 <div class="row">
