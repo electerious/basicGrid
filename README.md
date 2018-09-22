@@ -30,13 +30,14 @@ A Foundation-like grid system based on the `flex` display property.
 
 ## Setup
 
-We recommend to install basicGrid using [Bower](https://bower.io/) or [npm](https://npmjs.com).
+We recommend to install basicGrid using [npm](https://npmjs.com) or [yarn](https://yarnpkg.com).
 
 ```sh
-bower install basicGrid
-```
-```sh
 npm install basicgrid
+```
+
+```sh
+yarn add basicgrid
 ```
 
 Include the CSS files in the `head` tag …
