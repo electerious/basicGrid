@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [3.1.0] - 2018-05-18
 
-### New
+### Added
 
 - Show and hide rows (#7)
 
@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [3.0.0] - 2017-10-14
 
-### New
+### Added
 
 - Set a custom gutter for the outermost row
 - Overwrite SASS variables with CSS variables to adjust the grid on the client
@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [2.0.2] - 2017-08-08
 
-### New
+### Added
 
 - Added a changelog
 
