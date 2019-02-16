@@ -30,7 +30,7 @@ A Foundation-like grid system based on the `flex` display property.
 
 ## Setup
 
-We recommend to install basicGrid using [npm](https://npmjs.com) or [yarn](https://yarnpkg.com).
+We recommend installing basicGrid using [npm](https://npmjs.com) or [yarn](https://yarnpkg.com).
 
 ```sh
 npm install basicgrid
