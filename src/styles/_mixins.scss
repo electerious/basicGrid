@@ -22,7 +22,8 @@
 @mixin columnClasses($name) {
 
 	&.#{ $name }-auto {
-		flex: 1 1 0;
+		// Must be 0px instead of 0 to work in IE11
+		flex: 1 1 0px;
 	}
 
 	@for $i from 1 through $basicGrid__columns {
