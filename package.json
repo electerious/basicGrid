@@ -17,8 +17,7 @@
     "responsive"
   ],
   "scripts": {
-    "start": "gulp watch",
-    "compile": "gulp"
+    "build": "node build.js"
   },
   "license": "MIT",
   "homepage": "https://basicgrid.electerious.com",
@@ -31,7 +30,6 @@
     "src"
   ],
   "devDependencies": {
-    "@electerious/basictasks": "4.0.0",
-    "gulp": "^3.9.1"
+    "rosid-handler-sass": "^6.0.4"
   }
 }
