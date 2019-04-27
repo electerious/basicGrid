@@ -25,8 +25,6 @@ A Foundation-like grid system based on the `flex` display property.
 | Name | Description | Link |
 |:-----------|:------------|:------------|
 | Default | Includes all features and most column variations. | [Try it on CodePen](https://codepen.io/electerious/pen/pjOvPZ) |
-| Equal height boxes | Simple boxes with an equal height and a background. | [Try it on CodePen](http://codepen.io/electerious/pen/rWwPYa) |
-| Equal height boxes with shadows | Boxes with an equal height, background and shadow. | [Try it on CodePen](http://codepen.io/electerious/pen/RogdaY) |
 
 ## Setup
 
