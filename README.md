@@ -1,6 +1,6 @@
 # basicGrid
 
-[![Dependencies](https://david-dm.org/electerious/basicgrid.svg)](https://david-dm.org/electerious/basicgrid.svg#info=dependencies) [![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CYKBESW577YWE)
+[![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CYKBESW577YWE)
 
 A Foundation-like grid system based on the `flex` display property.
 
