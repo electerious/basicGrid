@@ -17,7 +17,7 @@
 	}
 
 	.row {
-		margin: 0 $basicGrid__gutter/-2;
+		margin: 0 math.div($basicGrid__gutter, -2);
 		margin: 0 calc(var(--basicGrid-gutter, #{ $basicGrid__gutter }) / -2);
 		padding: 0;
 		width: auto;
@@ -27,7 +27,7 @@
 	.column {
 		position: relative;
 		box-sizing: border-box;
-		padding: 0 $basicGrid__gutter/2;
+		padding: 0 math.div($basicGrid__gutter, 2);
 		padding: 0 calc(var(--basicGrid-gutter, #{ $basicGrid__gutter }) / 2);
 		width: 100%;
 

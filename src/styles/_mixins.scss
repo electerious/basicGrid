@@ -30,21 +30,21 @@
 
 		&.#{ $name }-#{ $i } {
 			flex: 0 1 auto;
-			width: percentage(1 / $basicGrid__columns) * $i;
+			width: percentage(math.div(1, $basicGrid__columns)) * $i;
 		}
 
 		&.#{ $name }-offset-#{ $i } {
-			margin-left: percentage(1 / $basicGrid__columns) * $i;
+			margin-left: percentage(math.div(1, $basicGrid__columns)) * $i;
 		}
 
 		&.#{ $name }-pull-#{ $i } {
 			left: auto;
-			right: percentage(1 / $basicGrid__columns) * $i;
+			right: percentage(math.div(1, $basicGrid__columns)) * $i;
 		}
 
 		&.#{ $name }-push-#{ $i } {
 			right: auto;
-			left: percentage(1 / $basicGrid__columns) * $i;
+			left: percentage(math.div(1, $basicGrid__columns)) * $i;
 		}
 
 	}
